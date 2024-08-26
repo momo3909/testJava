@@ -1,0 +1,26 @@
+public TestStock(String ticker, String productName, String market, long sharesIssued) throws NotCorrectStockException {
+        this.ticker = ticker;
+        this.productName = productName;
+        this.market = market;
+        this.sharesIssued = sharesIssued;
+
+        if (ticker.matches("[A-Z0-9]{4}")
+                && (!ticker.contains("B")
+                && !ticker.contains("E")
+                && !ticker.contains("I")
+                && !ticker.contains("O")
+                && !ticker.contains("Q")
+                && !ticker.contains("V")
+                && !ticker.contains("Z"))
+                && ((Character.isDigit(ticker.charAt(0)) &&
+                Character.isDigit(ticker.charAt(2))))) {
+        } else throw new NotCorrectStockException();
+
+        if (!productName.matches("[a-zA-Z0-9. ()]*")) {
+            throw new NotCorrectStockException();
+        }
+
+        if ((sharesIssued <= 0) || (sharesIssued >= 1000000000000L)) {
+            throw new NotCorrectStockException();
+        }
+    }
