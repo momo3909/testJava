@@ -1,0 +1,13 @@
+ticker,product_name,market,shares_issued
+7203,TOYOTA MORTOR CORPORATION,P,15794987460
+8306,Mitsubishi UFJ Financial Group Inc.,P,12337710920
+6861,Keyence Corp.,P,243207684
+6758,Sony Group Corporation,P,1248619589
+4716,Oracle Corporation Japan,S,128293071
+141A,Trial Holdings Inc.,G,122318300
+1111,q,P,111111111
+1234,test,S,101010101
+111A,testt,G,1100000000
+1110,momo,G,123456
+1122,t,S,11111111111
+4373,Simplex,P,55555555
